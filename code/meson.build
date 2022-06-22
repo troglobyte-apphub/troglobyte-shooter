@@ -10,7 +10,7 @@ code_dep = declare_dependency(
     link_with: code_lib,
     include_directories: '.')
 
-executable('prog',
+executable('trog-shooter',
     'main.c',
     dependencies: [code_dep],
     install: true)

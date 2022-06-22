@@ -1,4 +1,4 @@
-project('Troglo Program', 'c',
+project('Troglo Shooter', 'c',
     license: 'apache-2.0',
     version: '0.1.0',
     meson_version: '>=0.62.0',

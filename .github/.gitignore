@@ -1,4 +1,6 @@
 build
 builddir
 .DS_Store
-subprojects/*
+subprojects/unity
+subprojects/packagecache
+subprojects/SDL2-2.0.20

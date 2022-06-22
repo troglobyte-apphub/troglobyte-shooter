@@ -1,4 +1,4 @@
 build
 builddir
 .DS_Store
-subprojects/unity
+subprojects/*

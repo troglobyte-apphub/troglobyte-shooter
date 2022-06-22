@@ -2,6 +2,9 @@ sdl2_dep = dependency('sdl2')
 
 code_lib = static_library('code_lib',
     'program.c',
+    'draw.c',
+    'init.c'
+    'input.c'
     include_directories: '.',
     dependencies : [sdl2_dep],
     install: true)

@@ -6,6 +6,9 @@
 #ifndef DRAW_H
 #define DRAW_H
 
-// TODO
+#include "common.h"
+
+void prepareScene(void);
+void presentScene(void);
 
 #endif

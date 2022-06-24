@@ -6,6 +6,9 @@
 #ifndef INIT_H
 #define INIT_H
 
-// TODO
+#include "common.h"
+
+void initSDL(void);
+void cleanup(void);
 
 #endif

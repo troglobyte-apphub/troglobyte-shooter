@@ -6,7 +6,7 @@
 #ifndef STRUCTS_H
 #define STRUCTS_H
 
-#include <SDL.h>
+#include "common.h"
 
 typedef struct
 {

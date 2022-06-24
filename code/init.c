@@ -8,19 +8,9 @@
 extern App app;
 
 //
-// We start by calling SDL_Init, passing over SDL_INIT_VIDEO to
-// initialize SDL2's video subsystem. We next create our window
-// using SDL_CreateWindow. SDL_WINDOWPOS_UNDEFINED tells SDL to
-// let the OS position the window wherever it likes. Our width
-// and height are defined by SCREEN_WIDTH and SCREEN_HEIGHT (found
-// in defs.h). With this done, we next create the main renderer by
-// calling SDL_CreateRenderer, supplying the window we just created
-// and the render flags that we want to use (in this case
-// SDL_RENDERER_ACCELERATED). The -1 tells SDL to use the first
-// graphics acceleration device it finds. Unless you're trying to
-// do something very specific, you'll want to pass -1 to this call.
-// For both the creation of the window and renderer we'll check to
-// see if they were successful and exit with an error message if not.
+// Should allocate the needed objects for the
+// application things like the renderer, window
+// and so on.
 //
 // function arguments:
 // -> n/a: ???
@@ -56,7 +46,13 @@ void initSDL(void)
 
 } // end of func
 
-
+//
+// Should earse the allocated objects such as
+// the renderer and window.
+//
+// function arguments:
+// -> n/a: ???
+//
 void cleanup(void)
 {
     SDL_DestroyRenderer(app.renderer);

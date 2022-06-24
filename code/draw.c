@@ -8,17 +8,7 @@
 extern App app;
 
 //
-// We set the colour of SDL renderer using
-// SDL_SetRenderDrawColor. This function
-// takes five parameters: the pointer to the
-// renderer that we created in init.c and the
-// RGBA of the colour that we want to use.
-// These values go from 0 to 255, with 0 being
-// darkest and 255 being full. The final parameter
-// is the alpha value. 0 is fully transparent
-// whereas 255 is opaque. SDL_RenderPresent  takes
-// just one parameter - once again the renderer
-// that we are using.
+// Should prepare are scene for the player.
 //
 // function arguments:
 // -> n/a: ???

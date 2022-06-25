@@ -1,14 +1,16 @@
-# C Program
+# Troglobyte Shooter
 
 ### status
 
-[![Linux Users](https://github.com/troglobyte-coder/meson_prog_c/actions/workflows/ci_runner_linux.yml/badge.svg)](https://github.com/troglobyte-coder/meson_prog_c/actions/workflows/ci_runner_linux.yml) [![MacOSX Users](https://github.com/troglobyte-coder/meson_prog_c/actions/workflows/ci_runner_macosx.yml/badge.svg)](https://github.com/troglobyte-coder/meson_prog_c/actions/workflows/ci_runner_macosx.yml) [![Windows Users](https://github.com/troglobyte-coder/meson_prog_c/actions/workflows/ci_runner_windows.yml/badge.svg)](https://github.com/troglobyte-coder/meson_prog_c/actions/workflows/ci_runner_windows.yml)
+[![Linux Users](https://github.com/troglobyte-apphub/troglobyte-shooter/actions/workflows/ci_runner_linux.yml/badge.svg)](https://github.com/troglobyte-apphub/troglobyte-shooter/actions/workflows/ci_runner_linux.yml) [![MacOSX Users](https://github.com/troglobyte-apphub/troglobyte-shooter/actions/workflows/ci_runner_macosx.yml/badge.svg)](https://github.com/troglobyte-apphub/troglobyte-shooter/actions/workflows/ci_runner_macosx.yml) [![Windows Users](https://github.com/troglobyte-apphub/troglobyte-shooter/actions/workflows/ci_runner_windows.yml/badge.svg)](https://github.com/troglobyte-apphub/troglobyte-shooter/actions/workflows/ci_runner_windows.yml)
 
 ## overview
 
 * * *
 
-Please add relevant information about your application.
+Oh no! There's invadors from the Troglobyte system, help keep
+humans safe from the those space invadors by shooting down
+there spaceships.
 
 ## preview
 
@@ -55,7 +57,7 @@ meson install -C builddir
 And finally we run this cool application:
 
 ```console
-prog
+trog-shooter
 ```
 
 ## contact

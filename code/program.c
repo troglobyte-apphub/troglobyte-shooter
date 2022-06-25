@@ -5,7 +5,13 @@
 //
 #include "program.h"
 #include <stdio.h>
-#include <SDL.h>
+#include <stdlib.h>
+
+#include "init.h"
+#include "draw.h"
+#include "input.h"
+
+App app;
 
 //
 // Should greet the user into the program
@@ -32,38 +38,18 @@ const char *greet(void)
 //
 int foundation(int argc, char **argv)
 {
-    SDL_Window *window;
-    SDL_Renderer *renderer;
-    SDL_Surface *surface;
-    SDL_Event event;
+    memset(&app, 0, sizeof(App));
+	initSDL();
+	atexit(cleanup);
 
-    if (SDL_Init(SDL_INIT_VIDEO) < 0)
-    {
-        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't initialize SDL: %s", SDL_GetError());
-        return 3;
-    } // end if
+	while (1)
+	{
+		prepareScene();
+		doInput();
+		presentScene();
 
-    if (SDL_CreateWindowAndRenderer(320, 240, SDL_WINDOW_RESIZABLE, &window, &renderer))
-    {
-        SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Couldn't create window and renderer: %s", SDL_GetError());
-        return 3;
-    } // end if
+		SDL_Delay(16);
+	} // end while
 
-    while (1)
-    {
-        SDL_PollEvent(&event);
-        if (event.type == SDL_QUIT)
-        {
-            break;
-        } // end if
-        SDL_SetRenderDrawColor(renderer, 0x00, 0x00, 0x00, 0x00);
-        SDL_RenderClear(renderer);
-        SDL_RenderPresent(renderer);
-    } // end while
-
-    SDL_DestroyRenderer(renderer);
-    SDL_DestroyWindow(window);
-
-    SDL_Quit();
-    return 0;
+	return 0;
 } // end of func
